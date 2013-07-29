@@ -10,4 +10,19 @@
 
 @interface UIViewController (JLTEasyObservation)
 
+- (void)beginEasyObserving;
+- (void)endEasyObserving;
+@property (assign, nonatomic, getter = isEasyObserving) BOOL easyObserving;
+
+@property (copy, nonatomic) NSArray *easyObservationKeyPaths;
+@property (copy, nonatomic) NSArray *easyNotificationNames;
+
+@property (assign, nonatomic, readonly, getter = isInitialEasyObservation) BOOL initialEasyObservation;
+
+@end
+
+@protocol JLTEasyNotification <NSObject>
+
+- (void)observeEasyNotification:(NSNotification *)notification;
+
 @end

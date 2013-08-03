@@ -7,7 +7,7 @@
 //
 
 #import "UIViewController+JLTEasyObservation.h"
-#include <objc/objc-runtime.h>
+#import <objc/runtime.h>
 
 @interface UIViewController ()
 @property (assign, nonatomic, getter = isInitialEasyObservation) BOOL initialEasyObservation;

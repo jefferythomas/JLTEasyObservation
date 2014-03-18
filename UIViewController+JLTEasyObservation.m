@@ -1,17 +1,17 @@
 //
 //  UIViewController+JLTEasyObservation.m
-//  JLTEasyObservationDemo
+//  JLTEasyObservation
 //
 //  Created by Jeffery Thomas on 7/26/13.
-//  Copyright (c) 2013 JLT Source. All rights reserved.
+//  Copyright (c) 2013 JLT Source. No rights reserved.
 //
 
 #import "UIViewController+JLTEasyObservation.h"
 #import <objc/runtime.h>
 
 @interface UIViewController ()
-@property (assign, nonatomic, getter = isInitialEasyObservation) BOOL initialEasyObservation;
-@property (strong, nonatomic, readonly) NSMutableDictionary *JLT_easyObservationDict;
+@property (nonatomic, getter = isInitialEasyObservation) BOOL initialEasyObservation;
+@property (nonatomic, readonly) NSMutableDictionary *JLT_easyObservationDict;
 @end
 
 @implementation UIViewController (JLTEasyObservation)
@@ -55,12 +55,6 @@
     return [self.JLT_easyObservationDict[@"easyObserving"] boolValue];
 }
 
-- (void)setEasyObserving:(BOOL)easyObserving
-{
-    if (self.easyObserving) [self beginEasyObserving];
-    else                    [self endEasyObserving];
-}
-
 - (NSArray *)easyObservationKeyPaths
 {
     return self.JLT_easyObservationDict[@"easyObservationKeyPaths"];
@@ -70,9 +64,9 @@
 {
     BOOL observing = self.easyObserving;
 
-    if (observing) self.easyObserving = NO;
+    if (observing) [self endEasyObserving];
     self.JLT_easyObservationDict[@"easyObservationKeyPaths"] = [easyObservationKeyPaths copy];
-    if (observing) self.easyObserving = YES;
+    if (observing) [self beginEasyObserving];
 }
 
 - (NSArray *)easyNotificationNames
@@ -84,9 +78,9 @@
 {
     BOOL observing = self.easyObserving;
 
-    if (observing) self.easyObserving = NO;
+    if (observing) [self endEasyObserving];
     self.JLT_easyObservationDict[@"easyNotificationNames"] = [easyNotificationNames copy];
-    if (observing) self.easyObserving = YES;
+    if (observing) [self beginEasyObserving];
 }
 
 - (BOOL)isInitialEasyObservation
@@ -96,7 +90,7 @@
 
 - (void)setInitialEasyObservation:(BOOL)initialEasyObservation
 {
-    self.JLT_easyObservationDict[@"initialEasyObservation"] = @(initialEasyObservation);
+    self.JLT_easyObservationDict[@"initialEasyObservation"] = initialEasyObservation ? @YES : @NO;
 }
 
 - (NSMutableDictionary *)JLT_easyObservationDict

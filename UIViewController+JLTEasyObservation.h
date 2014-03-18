@@ -1,9 +1,9 @@
 //
 //  UIViewController+JLTEasyObservation.h
-//  JLTEasyObservationDemo
+//  JLTEasyObservation
 //
 //  Created by Jeffery Thomas on 7/26/13.
-//  Copyright (c) 2013 JLT Source. All rights reserved.
+//  Copyright (c) 2013 JLT Source. No rights reserved.
 //
 
 #import <UIKit/UIKit.h>
@@ -12,12 +12,12 @@
 
 - (void)beginEasyObserving;
 - (void)endEasyObserving;
-@property (assign, nonatomic, getter = isEasyObserving) BOOL easyObserving;
+@property (nonatomic, readonly, getter = isEasyObserving) BOOL easyObserving;
 
 @property (copy, nonatomic) NSArray *easyObservationKeyPaths;
 @property (copy, nonatomic) NSArray *easyNotificationNames;
 
-@property (assign, nonatomic, readonly, getter = isInitialEasyObservation) BOOL initialEasyObservation;
+@property (nonatomic, readonly, getter = isInitialEasyObservation) BOOL initialEasyObservation;
 
 @end
 

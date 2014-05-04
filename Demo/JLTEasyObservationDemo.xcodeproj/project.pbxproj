@@ -18,7 +18,6 @@
 		7B13025B17A36C36001B6ABD /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7B13025A17A36C36001B6ABD /* Default-568h@2x.png */; };
 		7B13025E17A36C36001B6ABD /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7B13025C17A36C36001B6ABD /* MainStoryboard.storyboard */; };
 		7B13026117A36C36001B6ABD /* JLTViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B13026017A36C36001B6ABD /* JLTViewController.m */; };
-		7B13026917A36C36001B6ABD /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7B13026817A36C36001B6ABD /* SenTestingKit.framework */; };
 		7B13026A17A36C36001B6ABD /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7B13024417A36C36001B6ABD /* UIKit.framework */; };
 		7B13026B17A36C36001B6ABD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7B13024617A36C36001B6ABD /* Foundation.framework */; };
 		7B13027317A36C36001B6ABD /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 7B13027117A36C36001B6ABD /* InfoPlist.strings */; };
@@ -53,11 +52,9 @@
 		7B13025D17A36C36001B6ABD /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
 		7B13025F17A36C36001B6ABD /* JLTViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JLTViewController.h; sourceTree = "<group>"; };
 		7B13026017A36C36001B6ABD /* JLTViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JLTViewController.m; sourceTree = "<group>"; };
-		7B13026717A36C36001B6ABD /* JLTEasyObservationDemoTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JLTEasyObservationDemoTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
-		7B13026817A36C36001B6ABD /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		7B13026717A36C36001B6ABD /* JLTEasyObservationDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JLTEasyObservationDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7B13027017A36C36001B6ABD /* JLTEasyObservationDemoTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "JLTEasyObservationDemoTests-Info.plist"; sourceTree = "<group>"; };
 		7B13027217A36C36001B6ABD /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		7B13027417A36C36001B6ABD /* JLTEasyObservationDemoTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JLTEasyObservationDemoTests.h; sourceTree = "<group>"; };
 		7B13027517A36C36001B6ABD /* JLTEasyObservationDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JLTEasyObservationDemoTests.m; sourceTree = "<group>"; };
 		7B8351F51915B4970045E1F6 /* UIViewController+JLTEasyObservation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIViewController+JLTEasyObservation.h"; path = "../UIViewController+JLTEasyObservation.h"; sourceTree = "<group>"; };
 		7B8351F61915B4970045E1F6 /* UIViewController+JLTEasyObservation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIViewController+JLTEasyObservation.m"; path = "../UIViewController+JLTEasyObservation.m"; sourceTree = "<group>"; };
@@ -78,7 +75,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7B13026917A36C36001B6ABD /* SenTestingKit.framework in Frameworks */,
 				7B13026A17A36C36001B6ABD /* UIKit.framework in Frameworks */,
 				7B13026B17A36C36001B6ABD /* Foundation.framework in Frameworks */,
 			);
@@ -103,7 +99,7 @@
 			isa = PBXGroup;
 			children = (
 				7B13024117A36C36001B6ABD /* JLTEasyObservationDemo.app */,
-				7B13026717A36C36001B6ABD /* JLTEasyObservationDemoTests.octest */,
+				7B13026717A36C36001B6ABD /* JLTEasyObservationDemoTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -114,7 +110,6 @@
 				7B13024417A36C36001B6ABD /* UIKit.framework */,
 				7B13024617A36C36001B6ABD /* Foundation.framework */,
 				7B13024817A36C36001B6ABD /* CoreGraphics.framework */,
-				7B13026817A36C36001B6ABD /* SenTestingKit.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -149,7 +144,6 @@
 		7B13026E17A36C36001B6ABD /* JLTEasyObservationDemoTests */ = {
 			isa = PBXGroup;
 			children = (
-				7B13027417A36C36001B6ABD /* JLTEasyObservationDemoTests.h */,
 				7B13027517A36C36001B6ABD /* JLTEasyObservationDemoTests.m */,
 				7B13026F17A36C36001B6ABD /* Supporting Files */,
 			);
@@ -201,8 +195,8 @@
 			);
 			name = JLTEasyObservationDemoTests;
 			productName = JLTEasyObservationDemoTests;
-			productReference = 7B13026717A36C36001B6ABD /* JLTEasyObservationDemoTests.octest */;
-			productType = "com.apple.product-type.bundle";
+			productReference = 7B13026717A36C36001B6ABD /* JLTEasyObservationDemoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
 
@@ -414,13 +408,13 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
 					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+					"$(inherited)",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "JLTEasyObservationDemo/JLTEasyObservationDemo-Prefix.pch";
 				INFOPLIST_FILE = "JLTEasyObservationDemoTests/JLTEasyObservationDemoTests-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUNDLE_LOADER)";
-				WRAPPER_EXTENSION = octest;
 			};
 			name = Debug;
 		};
@@ -431,13 +425,13 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
 					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+					"$(inherited)",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "JLTEasyObservationDemo/JLTEasyObservationDemo-Prefix.pch";
 				INFOPLIST_FILE = "JLTEasyObservationDemoTests/JLTEasyObservationDemoTests-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUNDLE_LOADER)";
-				WRAPPER_EXTENSION = octest;
 			};
 			name = Release;
 		};

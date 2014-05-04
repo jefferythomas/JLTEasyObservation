@@ -6,8 +6,12 @@
 //  Copyright (c) 2013 JLT Source. All rights reserved.
 //
 
-#import "JLTEasyObservationDemoTests.h"
+#import <XCTest/XCTest.h>
 #import "UIViewController+JLTEasyObservation.h"
+
+@interface JLTEasyObservationDemoTests : XCTestCase
+
+@end
 
 @interface JLTTestViewController : UIViewController <JLTEasyNotification>
 @property (nonatomic) NSString *test;
@@ -18,20 +22,6 @@
 
 @implementation JLTEasyObservationDemoTests
 
-- (void)setUp
-{
-    [super setUp];
-    
-    // Set-up code here.
-}
-
-- (void)tearDown
-{
-    // Tear-down code here.
-    
-    [super tearDown];
-}
-
 - (void)testEasyObservationInitialEasyObservation
 {
     JLTTestViewController *viewController = [[JLTTestViewController alloc] init];
@@ -39,7 +29,7 @@
     [viewController beginEasyObserving];
     [viewController endEasyObserving];
 
-    STAssertTrue(viewController.wasInitiallyObserved, nil);
+    XCTAssertTrue(viewController.wasInitiallyObserved);
 }
 
 - (void)testEasyObservationChangeWasObserved
@@ -50,7 +40,7 @@
     viewController.test = @"test";
     [viewController endEasyObserving];
 
-    STAssertTrue(viewController.changeWasObserved, nil);
+    XCTAssertTrue(viewController.changeWasObserved);
 }
 
 - (void)testEasyObservationChangeWasNotObserved
@@ -61,7 +51,7 @@
     [viewController endEasyObserving];
     viewController.test = @"test";
 
-    STAssertFalse(viewController.changeWasObserved, nil);
+    XCTAssertFalse(viewController.changeWasObserved);
 }
 
 - (void)testEasyObservationWasNotified
@@ -72,7 +62,7 @@
     [[NSNotificationCenter defaultCenter] postNotificationName:@"JLTTestNotification" object:self];
     [viewController endEasyObserving];
 
-    STAssertTrue(viewController.wasNotified, nil);
+    XCTAssertTrue(viewController.wasNotified);
 }
 
 - (void)testEasyObservationWasNotNotified
@@ -83,7 +73,7 @@
     [viewController endEasyObserving];
     [[NSNotificationCenter defaultCenter] postNotificationName:@"JLTTestNotification" object:self];
 
-    STAssertFalse(viewController.wasNotified, nil);
+    XCTAssertFalse(viewController.wasNotified);
 }
 
 @end

@@ -21,7 +21,7 @@
 
 @end
 
-@protocol JLTEasyNotification <NSObject>
+@protocol JLTEasyNotifying <NSObject>
 
 - (void)observeEasyNotification:(NSNotification *)notification;
 

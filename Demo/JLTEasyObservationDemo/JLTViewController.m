@@ -9,7 +9,7 @@
 #import "JLTViewController.h"
 #import "UIViewController+JLTEasyObservation.h"
 
-@interface JLTViewController () <JLTEasyNotification>
+@interface JLTViewController () <JLTEasyNotifying>
 @property (copy, nonatomic) NSString *test;
 @end
 

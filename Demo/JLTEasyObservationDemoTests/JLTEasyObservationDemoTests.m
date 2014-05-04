@@ -13,7 +13,7 @@
 
 @end
 
-@interface JLTTestViewController : UIViewController <JLTEasyNotification>
+@interface JLTTestViewController : UIViewController <JLTEasyNotifying>
 @property (nonatomic) NSString *test;
 @property (nonatomic) BOOL changeWasObserved;
 @property (nonatomic) BOOL wasInitiallyObserved;

@@ -27,6 +27,7 @@
     JLTTestViewController *viewController = [[JLTTestViewController alloc] init];
     viewController.easyObservationKeyPaths = @[@"test"];
     [viewController beginEasyObserving];
+    XCTAssertTrue(viewController.easyObserving);
     [viewController endEasyObserving];
 
     XCTAssertTrue(viewController.wasInitiallyObserved);

@@ -19,6 +19,7 @@
 
 - (IBAction)loginUser:(id)sender
 {
+    [self jlt_performAuthentication];
     self.password = nil;
 }
 
@@ -86,6 +87,13 @@ replacementString:(NSString *)string
             [self.view layoutIfNeeded];
         } completion:NULL];
     }
+}
+
+#pragma mark Private
+
+- (void)jlt_performAuthentication
+{
+
 }
 
 #pragma mark View lifecycle

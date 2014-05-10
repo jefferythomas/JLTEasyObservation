@@ -3,7 +3,7 @@
 //  JLTEasyObservationDemoTests
 //
 //  Created by Jeffery Thomas on 7/26/13.
-//  Copyright (c) 2013 JLT Source. All rights reserved.
+//  Copyright (c) 2013 JLT Source. No rights reserved.
 //
 
 #import <XCTest/XCTest.h>

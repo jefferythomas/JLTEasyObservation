@@ -130,6 +130,10 @@
                                     <constraint firstItem="DKQ-m8-Fd2" firstAttribute="leading" secondItem="1NF-F3-bax" secondAttribute="leading" id="rsC-2J-QDJ"/>
                                 </constraints>
                             </view>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="Down" translatesAutoresizingMaskIntoConstraints="NO" id="2TC-zT-Kp8">
+                                <rect key="frame" x="138" y="524" width="44" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <gestureRecognizers/>
@@ -138,16 +142,19 @@
                             <constraint firstItem="yS6-oF-C5v" firstAttribute="top" secondItem="uRm-xO-B68" secondAttribute="bottom" constant="40" id="898-hc-gig"/>
                             <constraint firstAttribute="centerX" secondItem="uRm-xO-B68" secondAttribute="centerX" id="BXz-2n-Uvx"/>
                             <constraint firstAttribute="centerX" secondItem="yS6-oF-C5v" secondAttribute="centerX" id="ITd-dO-odc"/>
+                            <constraint firstAttribute="centerX" secondItem="2TC-zT-Kp8" secondAttribute="centerX" id="Rwy-0c-nKM"/>
                             <constraint firstAttribute="centerX" secondItem="UUy-Xp-Jsv" secondAttribute="centerX" id="deL-fF-VL1"/>
                             <constraint firstAttribute="centerX" secondItem="1NF-F3-bax" secondAttribute="centerX" id="f02-yj-11S"/>
                             <constraint firstItem="UUy-Xp-Jsv" firstAttribute="top" secondItem="yS6-oF-C5v" secondAttribute="bottom" constant="8" id="uBM-RJ-6QI"/>
                             <constraint firstItem="1NF-F3-bax" firstAttribute="top" secondItem="UUy-Xp-Jsv" secondAttribute="bottom" constant="40" id="vuA-zO-npL"/>
+                            <constraint firstItem="d00-lo-N0S" firstAttribute="top" secondItem="2TC-zT-Kp8" secondAttribute="bottom" id="zib-JX-9YJ"/>
                         </constraints>
                         <connections>
                             <outletCollection property="gestureRecognizers" destination="chI-Aj-6RS" appends="YES" id="6NH-jt-P0D"/>
                         </connections>
                     </view>
                     <connections>
+                        <outlet property="jlt_keyboardMarkerBottomConstraint" destination="zib-JX-9YJ" id="fbH-qa-Fjb"/>
                         <outlet property="loginButton" destination="vyR-dc-UGA" id="KcI-r3-Jtn"/>
                         <outlet property="passwordTextField" destination="kgc-F5-4yF" id="mSW-Wh-R9I"/>
                         <outlet property="resetButton" destination="DKQ-m8-Fd2" id="r2f-Ib-qJY"/>
@@ -163,6 +170,9 @@
             </objects>
         </scene>
     </scenes>
+    <resources>
+        <image name="Down" width="44" height="44"/>
+    </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>

@@ -12,6 +12,7 @@
 @interface JLTViewController () <JLTEasyNotifying, UITextFieldDelegate>
 @property (nonatomic, readonly) BOOL jlt_canLogin;
 @property (nonatomic, readonly) BOOL jlt_canReset;
+@property (weak, nonatomic) IBOutlet NSLayoutConstraint *jlt_keyboardMarkerBottomConstraint;
 @end
 
 @implementation JLTViewController
@@ -70,7 +71,21 @@ replacementString:(NSString *)string
 
 - (void)observeEasyNotification:(NSNotification *)notification
 {
-    NSLog(@"%@", notification);
+    if ([notification.name isEqualToString:UIKeyboardWillChangeFrameNotification] ||
+        [notification.name isEqualToString:UIKeyboardWillHideNotification]) {
+        UIViewAnimationCurve curve = [notification.userInfo[UIKeyboardAnimationCurveUserInfoKey] intValue];
+        NSTimeInterval duration = [notification.userInfo[UIKeyboardAnimationDurationUserInfoKey] floatValue];
+        CGRect frameEnd = [notification.userInfo[UIKeyboardFrameEndUserInfoKey] CGRectValue];
+
+        frameEnd = [self.view convertRect:frameEnd fromView:nil];
+        CGFloat offset = self.view.bounds.size.height - frameEnd.origin.y;
+
+        [self.view layoutIfNeeded];
+        [UIView animateWithDuration:duration delay:0.0 options:curve << 16 animations:^{
+            self.jlt_keyboardMarkerBottomConstraint.constant = offset;
+            [self.view layoutIfNeeded];
+        } completion:NULL];
+    }
 }
 
 #pragma mark View lifecycle
@@ -79,7 +94,7 @@ replacementString:(NSString *)string
 {
     [super viewDidLoad];
     self.easyObservationKeyPaths = @[@"username", @"password", @"jlt_canLogin", @"jlt_canReset"];
-    self.easyNotificationNames = @[UIKeyboardWillChangeFrameNotification];
+    self.easyNotificationNames = @[UIKeyboardWillChangeFrameNotification, UIKeyboardWillHideNotification];
 }
 
 - (void)viewWillAppear:(BOOL)animated

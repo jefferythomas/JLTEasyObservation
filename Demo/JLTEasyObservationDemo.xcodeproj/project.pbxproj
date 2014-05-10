@@ -21,6 +21,7 @@
 		7B13027617A36C36001B6ABD /* JLTEasyObservationDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B13027517A36C36001B6ABD /* JLTEasyObservationDemoTests.m */; };
 		7B8351F71915B4970045E1F6 /* UIViewController+JLTEasyObservation.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B8351F61915B4970045E1F6 /* UIViewController+JLTEasyObservation.m */; };
 		7BC5FD88191DC82400BDD459 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7BC5FD87191DC82400BDD459 /* Images.xcassets */; };
+		7BC5FD8A191DCFFB00BDD459 /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 7BC5FD89191DCFFB00BDD459 /* Settings.bundle */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +55,7 @@
 		7B8351F51915B4970045E1F6 /* UIViewController+JLTEasyObservation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIViewController+JLTEasyObservation.h"; path = "../UIViewController+JLTEasyObservation.h"; sourceTree = "<group>"; };
 		7B8351F61915B4970045E1F6 /* UIViewController+JLTEasyObservation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIViewController+JLTEasyObservation.m"; path = "../UIViewController+JLTEasyObservation.m"; sourceTree = "<group>"; };
 		7BC5FD87191DC82400BDD459 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		7BC5FD89191DCFFB00BDD459 /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -131,6 +133,7 @@
 				7B13024D17A36C36001B6ABD /* InfoPlist.strings */,
 				7B13025017A36C36001B6ABD /* main.m */,
 				7B13025217A36C36001B6ABD /* JLTEasyObservationDemo-Prefix.pch */,
+				7BC5FD89191DCFFB00BDD459 /* Settings.bundle */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -225,6 +228,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7BC5FD8A191DCFFB00BDD459 /* Settings.bundle in Resources */,
 				7B13024F17A36C36001B6ABD /* InfoPlist.strings in Resources */,
 				7BC5FD88191DC82400BDD459 /* Images.xcassets in Resources */,
 				7B13025E17A36C36001B6ABD /* MainStoryboard.storyboard in Resources */,

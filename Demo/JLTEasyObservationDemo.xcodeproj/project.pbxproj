@@ -13,9 +13,6 @@
 		7B13024F17A36C36001B6ABD /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 7B13024D17A36C36001B6ABD /* InfoPlist.strings */; };
 		7B13025117A36C36001B6ABD /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B13025017A36C36001B6ABD /* main.m */; };
 		7B13025517A36C36001B6ABD /* JLTAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B13025417A36C36001B6ABD /* JLTAppDelegate.m */; };
-		7B13025717A36C36001B6ABD /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 7B13025617A36C36001B6ABD /* Default.png */; };
-		7B13025917A36C36001B6ABD /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7B13025817A36C36001B6ABD /* Default@2x.png */; };
-		7B13025B17A36C36001B6ABD /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7B13025A17A36C36001B6ABD /* Default-568h@2x.png */; };
 		7B13025E17A36C36001B6ABD /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7B13025C17A36C36001B6ABD /* MainStoryboard.storyboard */; };
 		7B13026117A36C36001B6ABD /* JLTViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B13026017A36C36001B6ABD /* JLTViewController.m */; };
 		7B13026A17A36C36001B6ABD /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7B13024417A36C36001B6ABD /* UIKit.framework */; };
@@ -23,6 +20,7 @@
 		7B13027317A36C36001B6ABD /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 7B13027117A36C36001B6ABD /* InfoPlist.strings */; };
 		7B13027617A36C36001B6ABD /* JLTEasyObservationDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B13027517A36C36001B6ABD /* JLTEasyObservationDemoTests.m */; };
 		7B8351F71915B4970045E1F6 /* UIViewController+JLTEasyObservation.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B8351F61915B4970045E1F6 /* UIViewController+JLTEasyObservation.m */; };
+		7BC5FD88191DC82400BDD459 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7BC5FD87191DC82400BDD459 /* Images.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,9 +44,6 @@
 		7B13025217A36C36001B6ABD /* JLTEasyObservationDemo-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "JLTEasyObservationDemo-Prefix.pch"; sourceTree = "<group>"; };
 		7B13025317A36C36001B6ABD /* JLTAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JLTAppDelegate.h; sourceTree = "<group>"; };
 		7B13025417A36C36001B6ABD /* JLTAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JLTAppDelegate.m; sourceTree = "<group>"; };
-		7B13025617A36C36001B6ABD /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
-		7B13025817A36C36001B6ABD /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
-		7B13025A17A36C36001B6ABD /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		7B13025D17A36C36001B6ABD /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
 		7B13025F17A36C36001B6ABD /* JLTViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JLTViewController.h; sourceTree = "<group>"; };
 		7B13026017A36C36001B6ABD /* JLTViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JLTViewController.m; sourceTree = "<group>"; };
@@ -58,6 +53,7 @@
 		7B13027517A36C36001B6ABD /* JLTEasyObservationDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JLTEasyObservationDemoTests.m; sourceTree = "<group>"; };
 		7B8351F51915B4970045E1F6 /* UIViewController+JLTEasyObservation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIViewController+JLTEasyObservation.h"; path = "../UIViewController+JLTEasyObservation.h"; sourceTree = "<group>"; };
 		7B8351F61915B4970045E1F6 /* UIViewController+JLTEasyObservation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIViewController+JLTEasyObservation.m"; path = "../UIViewController+JLTEasyObservation.m"; sourceTree = "<group>"; };
+		7BC5FD87191DC82400BDD459 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -122,6 +118,7 @@
 				7B13025C17A36C36001B6ABD /* MainStoryboard.storyboard */,
 				7B13025F17A36C36001B6ABD /* JLTViewController.h */,
 				7B13026017A36C36001B6ABD /* JLTViewController.m */,
+				7BC5FD87191DC82400BDD459 /* Images.xcassets */,
 				7B13024B17A36C36001B6ABD /* Supporting Files */,
 			);
 			path = JLTEasyObservationDemo;
@@ -134,9 +131,6 @@
 				7B13024D17A36C36001B6ABD /* InfoPlist.strings */,
 				7B13025017A36C36001B6ABD /* main.m */,
 				7B13025217A36C36001B6ABD /* JLTEasyObservationDemo-Prefix.pch */,
-				7B13025617A36C36001B6ABD /* Default.png */,
-				7B13025817A36C36001B6ABD /* Default@2x.png */,
-				7B13025A17A36C36001B6ABD /* Default-568h@2x.png */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -232,9 +226,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7B13024F17A36C36001B6ABD /* InfoPlist.strings in Resources */,
-				7B13025717A36C36001B6ABD /* Default.png in Resources */,
-				7B13025917A36C36001B6ABD /* Default@2x.png in Resources */,
-				7B13025B17A36C36001B6ABD /* Default-568h@2x.png in Resources */,
+				7BC5FD88191DC82400BDD459 /* Images.xcassets in Resources */,
 				7B13025E17A36C36001B6ABD /* MainStoryboard.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -382,6 +374,8 @@
 		7B13027A17A36C36001B6ABD /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "JLTEasyObservationDemo/JLTEasyObservationDemo-Prefix.pch";
 				INFOPLIST_FILE = "JLTEasyObservationDemo/JLTEasyObservationDemo-Info.plist";
@@ -393,6 +387,8 @@
 		7B13027B17A36C36001B6ABD /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "JLTEasyObservationDemo/JLTEasyObservationDemo-Prefix.pch";
 				INFOPLIST_FILE = "JLTEasyObservationDemo/JLTEasyObservationDemo-Info.plist";

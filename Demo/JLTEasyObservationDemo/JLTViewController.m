@@ -113,8 +113,8 @@ replacementString:(NSString *)string
 
 - (void)viewWillDisappear:(BOOL)animated
 {
-    [super viewWillDisappear:animated];
     [self endEasyObserving];
+    [super viewWillDisappear:animated];
 }
 
 #pragma mark Properties
